@@ -1,6 +1,6 @@
 # 👨‍💻 Mohayminul Mukit's Portfolio
 
-[🌐 Live Demo](https://reflexx-sigma.vercel.app) | [📂 GitHub Repo](https://github.com/mukit-blaster/myPortfolio)
+[🌐 Live Demo](https://profile-mukit.vercel.app/) | [📂 GitHub Repo](https://github.com/mukit-blaster/myPortfolio)
 
 ---
 
@@ -48,8 +48,8 @@ I specialize in **building modern, responsive, and interactive web applications*
 
 You can reach me via:
 
-- ✉️ Email: [mohayminul@example.com](mailto:mohayminul@example.com)  
-- 🔗 LinkedIn: [linkedin.com/in/mukit](https://www.linkedin.com/in/mukit)  
+- ✉️ Email: [mohayminul@example.com](mailto:mohyminulmukit@gmail.com)  
+- 🔗 LinkedIn: [linkedin.com/in/mohayminul-mukit](https://www.linkedin.com/in/mohayminul-mukit)  
 - 🐙 GitHub: [github.com/mukit-blaster](https://github.com/mukit-blaster)  
 
 ---
