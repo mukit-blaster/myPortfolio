@@ -1,20 +1,65 @@
-<<<<<<< HEAD
-# React + Vite
+# 👨‍💻 Mohayminul Mukit's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[🌐 Live Demo](https://profile-mukit.vercel.app/) | [📂 GitHub Repo](https://github.com/mukit-blaster/myPortfolio)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About Me
 
-## React Compiler
+Hi! I'm **Mohayminul Mukit** 👋, a passionate **Full-Stack Web Developer** from Dinajpur, Bangladesh.  
+Currently pursuing **B.Sc. in Computer Science & Engineering (CSE)** at **Daffodil International University**.  
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I specialize in **building modern, responsive, and interactive web applications** that deliver excellent user experiences.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# myPortfolio
->>>>>>> 500e594a81df53e5f211b4e72815893799f9ff1a
+## 🛠️ Tech Stack
+
+| Frontend | Backend | Tools & Platforms | Design |
+|----------|---------|-----------------|--------|
+| ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black) | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white) | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) | ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white) |
+| ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white) | ![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white) | ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white) | 🎨 UI/UX Design |
+| HTML5 & CSS3 | MongoDB | Vercel |  |
+| JavaScript | REST APIs |  |  |
+
+---
+
+## 🚀 Projects
+
+| Project | Description | Live Demo | GitHub |
+|---------|------------|-----------|--------|
+| **Reflex** | Mental wellness web app with guided meditation, therapy, and reading exercises. | [🌐 Live](https://reflexx-sigma.vercel.app) | [💻 GitHub](https://github.com/mukit-blaster/Reflex) |
+| **WeatherBuzz** | Real-time weather web app with dynamic weather data fetched via API. | [🌐 Live](https://mukit-blaster.github.io/WeatherBuzz/) | [💻 GitHub](https://github.com/mukit-blaster/WeatherBuzz) |
+| **Real Estate Website** | Modern, responsive property listing website with interactive UI. | [🌐 Live](https://mukit-blaster.github.io/real-state-website/) | [💻 GitHub](https://github.com/mukit-blaster/real-state-website) |
+| **Food Website** | Restaurant website showcasing menu and responsive design for better UX. | [🌐 Live](https://mukit-blaster.github.io/food-website/) | [💻 GitHub](https://github.com/mukit-blaster/food-website) |
+
+---
+
+## ✨ Features
+
+- Fully **responsive design** for desktop, tablet, and mobile devices.
+- Modern **hover effects** and **glassmorphic overlays** for project previews.
+- Interactive **scroll navigation** to sections like About, Skills, Experience, Services, Portfolio, and Contact.
+- **Live project previews** and **GitHub repositories** included.
+
+---
+
+## 📬 Contact Me
+
+You can reach me via:
+
+- ✉️ Email: [mohayminul@example.com](mailto:mohyminulmukit@gmail.com)  
+- 🔗 LinkedIn: [linkedin.com/in/mohayminul-mukit](https://www.linkedin.com/in/mohayminul-mukit)  
+- 🐙 GitHub: [github.com/mukit-blaster](https://github.com/mukit-blaster)  
+
+---
+
+## 💻 Installation
+
+Clone this repository and run locally:
+
+```bash
+git clone https://github.com/mukit-blaster/myPortfolio.git
+cd myPortfolio
+npm install
+npm start
