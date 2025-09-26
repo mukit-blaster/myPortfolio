@@ -63,15 +63,17 @@ export default function Hero() {
 
       {/* Download CV Button */}
       <a
-        href="#"
-        className="inline-block px-6 py-3 font-semibold rounded-lg 
-                   bg-transparent text-white border-2 border-gray-900
-                   transition duration-300 
-                   hover:bg-black hover:text-yellow-400 
-                   hover:shadow-[0_0_15px_#ffffff]"
-      >
-        Download CV
-      </a>
+  href="/Mukit-CV.pdf"
+  download="Mohayminul-Mukit-CV.pdf"
+  className="inline-block px-6 py-3 font-semibold rounded-lg 
+             bg-transparent text-white border-2 border-gray-900
+             transition duration-300 
+             hover:bg-black hover:text-yellow-400 
+             hover:shadow-[0_0_15px_#ffffff]"
+>
+  Download CV
+</a>
+
     </div>
         </div>
       </div>
