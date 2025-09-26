@@ -9,10 +9,10 @@ const technicalSkills = [
 ];
 
 const softSkills = [
-  { name: "Communication", icon: <FaComments className="text-yellow-400 text-xl md:text-2xl" />, level: "95%" },
+  { name: "Communication", icon: <FaComments className="text-yellow-400 text-xl md:text-2xl" />, level: "85%" },
   { name: "Teamwork", icon: <FaUsers className="text-yellow-400 text-xl md:text-2xl" />, level: "90%" },
   { name: "Problem Solving", icon: <FaLightbulb className="text-yellow-400 text-xl md:text-2xl" />, level: "90%" },
-  { name: "Critical Thinking", icon: <FaBrain className="text-yellow-400 text-xl md:text-2xl" />, level: "85%" },
+  { name: "Critical Thinking", icon: <FaBrain className="text-yellow-400 text-xl md:text-2xl" />, level: "95%" },
 ];
 
 export default function Skills() {

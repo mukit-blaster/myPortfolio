@@ -30,7 +30,7 @@ export default function About() {
       </p>
 
       <p className="text-lg leading-relaxed mb-4">
-        I specialize in <span className="text-yellow-400 font-semibold">JavaScript, React, and Tailwind CSS</span>, creating dynamic web experiences that are both fast and intuitive. I thrive on solving challenges, optimizing performance, and writing scalable code that lasts.
+        I specialize in <span className="text-yellow-400 font-semibold">JavaScript, React and Tailwind CSS</span>, creating dynamic web experiences that are both fast and intuitive. I thrive on solving challenges, optimizing performance, and writing scalable code that lasts.
       </p>
 
       <p className="text-lg leading-relaxed">
@@ -41,16 +41,18 @@ export default function About() {
       <div className="mt-8 flex space-x-4">
         <a
           href="#contact"
-          className="px-6 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-lg border-2 border-yellow-400 hover:bg-transparent hover:text-yellow-400 shadow-[0_0_10px_yellow] transition-all duration-300"
-        >
+className="px-6 py-3 bg-transparent text-yellow-400 font-semibold rounded-lg 
+             border-2 border-yellow-400 shadow-[0_0_10px_yellow] 
+             transition-all duration-300 
+             hover:bg-yellow-400 hover:text-gray-900"        >
           Let’s Talk
         </a>
-        <a
+        {/* <a
           href="/cv.pdf"
           className="px-6 py-3 bg-transparent text-white font-semibold rounded-lg border-2 border-yellow-400 hover:bg-yellow-400 hover:text-gray-900 transition-all duration-300"
         >
           Download CV
-        </a>
+        </a> */}
       </div>
     </div>
   </div>

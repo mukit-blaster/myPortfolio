@@ -14,44 +14,38 @@ export default function Hero() {
           <h2 className="text-xl text-gray-300">- I'm a Product Designer & Web Developer.</h2>
 
           {/* Social Links */}
-          <div className="flex space-x-4 mt-6">
-            <a
-              href="#"
-              className="h-12 w-12 flex items-center justify-center border-2 border-yellow-400 text-yellow-400 rounded-full hover:scale-110 transition"
-            >
-              <FaFacebook />
-            </a>
-            <a
-              href="#"
-              className="h-12 w-12 flex items-center justify-center border-2 border-yellow-400 text-yellow-400 rounded-full hover:scale-110 transition"
-            >
-              <FaWhatsapp />
-            </a>
-            <a
-              href="#"
-              className="h-12 w-12 flex items-center justify-center border-2 border-yellow-400 text-yellow-400 rounded-full hover:scale-110 transition"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="#"
-              className="h-12 w-12 flex items-center justify-center border-2 border-yellow-400 text-yellow-400 rounded-full hover:scale-110 transition"
-            >
-              <FaInstagram />
-            </a>
-            <a
-              href="#"
-              className="h-12 w-12 flex items-center justify-center border-2 border-yellow-400 text-yellow-400 rounded-full hover:scale-110 transition"
-            >
-              <FaGithub />
-            </a>
-          </div>
+          <div className="flex space-x-5 mt-6">
+  {[
+    { icon: <FaFacebook />, link: "https://www.facebook.com/mohayminul.mukit" },
+    { icon: <FaWhatsapp />, link: "https://wa.me/qr/VFOSXFXNN3KBA1" },
+    { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/mohayminul-mukit" },
+    { icon: <FaInstagram />, link: "https://www.instagram.com/_mukit_blaster" },
+    { icon: <FaGithub />, link: "https://github.com/mukit-blaster" },
+  ].map((item, i) => (
+    <a
+      key={i}
+      href={item.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="h-12 w-12 flex items-center justify-center 
+                 border-2 border-yellow-400 text-yellow-400 
+                 rounded-full shadow-[0_0_15px_rgba(255,255,0,0.4)] 
+                 transition-all duration-300 
+                 hover:scale-125 hover:rotate-6 
+                 hover:bg-gradient-to-tr hover:from-yellow-300 hover:to-yellow-400 
+                 hover:text-black hover:shadow-[0_0_25px_#FFD700]"
+    >
+      {item.icon}
+    </a>
+  ))}
+</div>
+
 
           {/* Buttons */}
           <div className="flex space-x-6 mt-8">
       {/* Hire Me Button */}
       <a
-        href="#"
+        href="#contact"
         className="inline-block px-6 py-3 font-semibold rounded-lg 
                    bg-black text-yellow-300 border-2 border-gray-900
                    transition duration-300 
