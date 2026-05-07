@@ -15,11 +15,16 @@ import ScrollTop from './components/ScrollTop';
 
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: "ease-out-cubic",
+      offset: 60,
+    });
   }, []);
 
   return (
-    <div className="bg-black text-white overflow-x-hidden">
+    <div className="bg-[#0b1020] text-slate-100 overflow-x-hidden">
       <Navbar />
       <Hero />
       <About />

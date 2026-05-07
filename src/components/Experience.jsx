@@ -1,79 +1,122 @@
 import React from "react";
-import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
+import { FaBriefcase, FaGraduationCap, FaCalendarAlt } from "react-icons/fa";
 
-const timeline = [
-  {
-    type: "education",
-    title: "B.Sc. in CSE",
-    company: "Daffodil International University",
-    duration: "2022 - 2026",
-  },
-  {
-    type: "education",
-    title: "HSC",
-    company: "Rajshahi Govt. City College",
-    duration: "2019 - 2021",
-  },
+const items = [
   {
     type: "experience",
     title: "Frontend Developer",
     company: "Freelance",
-    duration: "2023 - Present",
-    description: "Building responsive web apps with React & TailwindCSS.",
+    duration: "2024 — Present",
+    description:
+      "Building responsive, high-performance React applications with clean architecture and pixel-perfect UI.",
+    tags: ["React", "Tailwind", "Vite", "REST APIs"],
+  },
+  {
+    type: "education",
+    title: "B.Sc. in Computer Science & Engineering",
+    company: "Daffodil International University",
+    duration: "2022 — 2026",
+    description:
+      "Studying core CS — algorithms, data structures, software engineering, and modern web technologies.",
+    tags: ["CSE", "Algorithms", "Software Eng."],
   },
   {
     type: "experience",
     title: "Backend Developer",
     company: "Internship",
-    duration: "2022 - 2023",
-    description: "Developed REST APIs with Node.js, Express, and MongoDB.",
+    duration: "2025 — 2026",
+    description:
+      "Designed and developed REST APIs with Node.js, Express, and MongoDB — clean code, scalable patterns.",
+    tags: ["Node.js", "Express", "MongoDB"],
   },
+  
 ];
 
 export default function Experience() {
-  // Pair education and experience per row
-  const rows = [
-    { left: timeline[0], right: timeline[2] },
-    { left: timeline[1], right: timeline[3] },
-  ];
-
   return (
-    <section id="experience" className="py-20 bg-gray-900">
-      <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-300">
-        Experience & Education
-      </h2>
+    <section
+      id="experience"
+      className="section relative overflow-hidden bg-gradient-to-b from-[#0b1020] via-[#0d1428] to-[#0f172a]"
+    >
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute top-0 left-1/4 w-60 h-60 bg-indigo-500/15 rounded-full blur-3xl animate-blob"></div>
+        <div className="absolute bottom-0 right-1/4 w-60 h-60 bg-cyan-400/10 rounded-full blur-3xl animate-blob delay-300"></div>
+      </div>
 
-      <div className="max-w-5xl mx-auto flex flex-col gap-6 px-4">
-        {rows.map((row, index) => (
-          <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Left - Education */}
-            <div className="relative bg-gray-800 p-5 rounded-xl shadow-lg border-t-4 border-yellow-400 hover:shadow-[0_0_25px_#facc15] hover:-translate-y-1 transition transform duration-300 flex flex-col justify-between">
-              <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 w-12 h-12 flex items-center justify-center bg-gradient-to-tr from-yellow-400 to-orange-400 text-gray-900 rounded-full shadow-xl">
-                <FaGraduationCap className="text-xl" />
-              </div>
-              <h3 className="text-lg md:text-xl font-bold text-yellow-400 mt-8">
-                {row.left.title}
-              </h3>
-              <h4 className="text-gray-300 text-sm mb-2">
-                {row.left.company} {row.left.duration && `| ${row.left.duration}`}
-              </h4>
-            </div>
+      <div className="container mx-auto px-5 sm:px-6 relative z-10">
+        <div className="text-center mb-4 md:mb-5" data-aos="fade-up">
+          <span className="section-eyebrow">My journey</span>
+          <h2 className="section-title gradient-text heading-underline">
+            Experience &amp; Education
+          </h2>
+        </div>
 
-            {/* Right - Experience */}
-            <div className="relative bg-gray-800 p-5 rounded-xl shadow-lg border-t-4 border-yellow-400 hover:shadow-[0_0_25px_#facc15] hover:-translate-y-1 transition transform duration-300 flex flex-col justify-between">
-              <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 w-12 h-12 flex items-center justify-center bg-gradient-to-tr from-yellow-400 to-orange-400 text-gray-900 rounded-full shadow-xl">
-                <FaBriefcase className="text-xl" />
-              </div>
-              <h3 className="text-lg md:text-xl font-bold text-yellow-400 mt-8">
-                {row.right.title}
-              </h3>
-              <h4 className="text-gray-300 text-sm mb-2">
-                {row.right.company} {row.right.duration && `| ${row.right.duration}`}
-              </h4>
-              <p className="text-gray-200 text-sm">{row.right.description}</p>
-            </div>
+        <div className="relative max-w-5xl mx-auto">
+          <div className="absolute left-3 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-indigo-500/60 via-cyan-400/40 to-transparent md:-translate-x-1/2"></div>
+
+          <div className="space-y-3">
+            {items.map((item, i) => {
+              const isLeft = i % 2 === 0;
+              const Icon = item.type === "experience" ? FaBriefcase : FaGraduationCap;
+              return (
+                <div
+                  key={i}
+                  className="relative md:grid md:grid-cols-2 md:gap-8 items-center"
+                  data-aos={isLeft ? "fade-right" : "fade-left"}
+                >
+                  {/* Dot */}
+                  <div className="absolute left-3 md:left-1/2 -translate-x-1/2 top-4 md:top-1/2 md:-translate-y-1/2 z-10">
+                    <div className="relative w-7 h-7 rounded-full bg-gradient-to-br from-indigo-500 to-cyan-400 flex items-center justify-center text-white shadow-[0_0_14px_rgba(99,102,241,0.7)]">
+                      <Icon className="text-[0.6rem]" />
+                      <span className="absolute inset-0 rounded-full bg-cyan-400/40 animate-ping"></span>
+                    </div>
+                  </div>
+
+                  {/* Card */}
+                  <div
+                    className={`pl-10 md:pl-0 ${
+                      isLeft ? "md:pr-8 md:text-right" : "md:col-start-2 md:pl-8"
+                    }`}
+                  >
+                    <div className="gradient-border p-3 hover-lift">
+                      <div
+                        className={`flex items-center gap-1 text-cyan-300 text-[0.62rem] font-semibold uppercase tracking-wider mb-1 ${
+                          isLeft ? "md:justify-end" : ""
+                        }`}
+                      >
+                        <FaCalendarAlt className="text-[0.55rem]" />
+                        <span>{item.duration}</span>
+                      </div>
+                      <h3 className="text-[0.92rem] font-bold text-slate-100 leading-snug">
+                        {item.title}
+                      </h3>
+                      <h4 className="text-indigo-300 font-medium mb-1.5 text-[0.72rem]">
+                        {item.company}
+                      </h4>
+                      <p className="text-slate-300 text-[0.72rem] leading-snug mb-2">
+                        {item.description}
+                      </p>
+                      <div
+                        className={`flex flex-wrap gap-1 ${
+                          isLeft ? "md:justify-end" : ""
+                        }`}
+                      >
+                        {item.tags.map((t) => (
+                          <span
+                            key={t}
+                            className="px-2 py-0.5 rounded-full bg-indigo-500/10 border border-indigo-400/30 text-cyan-300 text-[0.62rem] font-medium"
+                          >
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
-        ))}
+        </div>
       </div>
     </section>
   );
